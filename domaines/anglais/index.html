@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ufahamu Test | English</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="../../font/css/all.css">
+
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html">
+              Ufahamu <span class="app">Test</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active m-2" aria-current="page" href="../../index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link m-2" href="../../domaines.html">Domaines</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link m-2" href="../../contact.html">A propos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+   <div class="quizz">
+    <!-- start Quiz button -->
+    <div class="start_btn">
+        
+        <form action="">
+            <div class="msg">Veuillez saisir votre nom : </div>
+            <input type="text" class="name" placeholder="Quel est votre nom ?" required>
+            <button type="submit">Commencer</button>
+        </form>    
+        
+        
+    </div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Quelques règles de ce quiz :</span></div>
+        <div class="info-list">
+            <div class="info">1. Vous n'avez que <span>10 secondes</span> par question.</div>
+            <div class="info">2. On ne choisit la réponse qu'une seule fois.</div>
+            <div class="info">3. Une fois le timing terminé, vous ne pouvez pas cocher</div>
+            <div class="info">4. On ne sort pas du jeu quand vous n'avez pas encore terminé toutes les questions.</div>
+            <div class="info">5. Les points sont accordés selon le nombre des questions reçues</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Quitter</button>
+            <button class="restart">Continuer</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Ufahamu Test App</div>
+            <div class="timer">
+                <div class="time_left_txt">Timing</div>
+                <div class="timer_sec">10</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Suivant</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <span class="nom"></span>
+        <div class="complete_text">Vous venez de terminer le quiz..</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Rejouer</button>
+            <button class="quit">Quitter le quiz</button>
+        </div>
+    </div>
+   </div>
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
+    <script src="../../font/js/all.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+   
+
+</body>
+</html>

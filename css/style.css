@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Murecho:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu:wght@300&display=swap');
+
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.navbar-brand {
+    font-weight: 700;
+}
+.app {
+    font-family: 'Lobster', cursive;
+    color: orange;
+}
+.navbar-nav {
+    padding-top: 10px;
+}
+
+.navbar-nav .nav-item:hover {
+    background-color: #DADDFC;
+    border-radius: 5px;
+}
+
+.body {
+    background: #2E4C6D;
+    width: 100%;
+    height: 87vh;
+}
+
+.body .header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 15px;
+    transition: all 0.5s ease-in;
+}
+
+.header .text {
+    width: 60%;
+    color: #fff;
+}
+.text h1 {
+    color: #DADDFC;
+    padding-bottom: 10px;
+}
+.text p {
+    font-size: 16px;
+}
+.text p a {
+    text-decoration: none;
+    color: coral;
+}
+.text .btn {
+    background-color: #FC997C;
+    color: #fff;
+    transition: all 0.8;
+}
+.text .btn:hover {
+   color: #fff;
+   background-color: #e9724e;
+   transform: scale(1.05);
+}
+.text .btn:active {
+    transform: scale(1.1);
+}
+.header .image {
+    width: 50%;
+    height: 90%;
+    margin-right: -30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    transition: all 0.5s;
+}
+.header .image:hover {
+    transform: scale(1.05);
+}
+.image img {
+    width: 95%;
+    height: 90%;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 10px 15px rgba(3, 3, 3, 0.479);
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.content_domain {
+    padding-top: 15px;
+}
+
+.card_section .carte {
+    width: 200px;
+    height: 80px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    margin-left: 35px;
+    margin-bottom: 15px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.carte:hover {
+    transform: scale(1.05);
+}
+.carte:hover.carte a {
+    color: #ff9e43;
+}
+.carte a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    transition: all 0.5s;
+}
+.carte a:hover {
+    color: #2E4C6D;
+}
+.carte.card_math {
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.350),rgba(0, 0, 0, 0.350)),url('../img/domaines/13.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.carte.card_physique {
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.350),rgba(0, 0, 0, 0.350)),url('../img/domaines/14.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.carte.card_anglais {
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.350),rgba(0, 0, 0, 0.350)),url('../img/domaines/5.svg');
+    background-position: center;
+    background-size: cover;
+}
+.carte.card_informatique {
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.350),rgba(0, 0, 0, 0.350)),url('../img/domaines/12.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.carte.card_swahili {
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.350),rgba(0, 0, 0, 0.350)),url('../img/domaines/7.svg');
+    background-position: center;
+    background-size: cover;
+}
+.carte.card_mashi {
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.350),rgba(0, 0, 0, 0.350)),url('../img/domaines/9.svg');
+    background-position: center;
+    background-size: cover;
+}
+.carte.card_francais {
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.350),rgba(0, 0, 0, 0.350)),url('../img/domaines/10.svg');
+    background-position: center;
+    background-size: cover;
+}
+.carte.card_cg {
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.350),rgba(0, 0, 0, 0.350)),url('../img/domaines/11.svg');
+    background-position: center;
+    background-size: cover;
+}
+@media screen and (max-width:800px) {
+    .body {
+        height: auto;
+    }
+    .body .header {
+        width: 100%;
+        height: 100%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .text {
+        padding-top: 30px;
+        width: 90%;
+        color: #fff;
+    }
+    .text h1 {
+        color: #DADDFC;
+        padding-bottom: 10px;
+        font-size: 2.5rem;
+    }
+    .text p {
+        font-size: 16px;
+    }
+    .text p a {
+        text-decoration: none;
+        color: coral;
+    }
+    .text .btn {
+        padding-top: 5px;
+        background-color: #FC997C;
+        color: #fff;
+        transition: all 0.8;
+    }
+    .text .btn:hover {
+       color: #fff;
+       background-color: #e9724e;
+       transform: scale(1.05);
+    }
+    .text .btn:active {
+        transform: scale(1.1);
+    }
+    .header .image {
+        width: 100%;
+        height: 70%;
+        margin-top: 25px;
+        border-radius: 5px;
+        display: flex;
+        background: none;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+    }
+    .header .image:hover {
+        transform: scale(1.05);
+    }
+    .image img {
+        width: 95%;
+        height: 90%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Domaines  */
+
+   
+}
+
+
+@media screen and (max-width:490px) {
+    .body {
+        margin-top: 20px;
+    }
+    .body .header {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .body .header {
+        width: 100%;
+        height: 100%;
+        margin-top: -20px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .text {
+        padding-top: 15px;
+        width: 90%;
+        color: #fff;
+    }
+    .text h1 {
+        color: #DADDFC;
+        padding-bottom: 10px;
+        font-size: 2rem;
+    }
+    .text p {
+        font-size: 16px;
+    }
+    .text p a {
+        text-decoration: none;
+        color: coral;
+    }
+    .text .btn {
+        padding-top: 5px;
+        background-color: #FC997C;
+        color: #fff;
+        transition: all 0.8;
+    }
+    .text .btn:hover {
+       color: #fff;
+       background-color: #e9724e;
+       transform: scale(1.05);
+    }
+    .text .btn:active {
+        transform: scale(1.1);
+    }
+    .header .image {
+        width: 100%;
+        height: 100%;
+        margin-top: 25px;
+        border-radius: 5px;
+        display: flex;
+        background: none;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+    }
+    .header .image:hover {
+        transform: scale(1.05);
+    }
+    .image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Domaines */
+
+    .card_section .carte {
+        width: 85%;
+        height: 80px;
+        border-radius: 5px;
+        padding: 10px;
+        display: flex;
+        flex-wrap:wrap;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 15px;
+        transition: all 0.2s;
+        cursor: pointer;
+    }
+}

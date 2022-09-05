@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Murecho:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu:wght@300&display=swap');
+
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.navbar-brand {
+    font-weight: 700;
+}
+.app {
+    font-family: 'Lobster', cursive;
+    color: orange;
+}
+.navbar-nav {
+    padding-top: 10px;
+}
+
+.navbar-nav .nav-item:hover {
+    background-color: #DADDFC;
+    border-radius: 5px;
+}
+
+
+.carte {
+    width: 100%;
+    height: 100%;
+    background: #daddfc86;
+    margin: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.col-lg-4 {
+    margin-bottom: 15px;
+}
+.carte .img {
+    width: 100%;
+    height: 48%;
+}
+.img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.carte .text {
+    padding: 5px;
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+.carte .title {
+    text-align: center;
+}
+.text h2 {
+    font-weight: 600;
+    font-size: 26px;
+}
+.title .role {
+    color: grey;
+}
+.text p {
+    font-size: 16px;
+    padding-top: 5px;
+}
+.text .icon {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #2E4C6D;
+    padding: 15px;
+    border-radius: 5px;
+}
+.icon a {
+    color: #DADDFC;
+    transition: all 0.5s;
+}
+.icon a:hover {
+    transform: scale(1.5);
+    color: #396EB0;
+}
+
+
+@media(max-width: 500px) {
+    .carte .img {
+        width: 95%;
+        height: 60%;
+    }
+    .img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+}
+
+
+
